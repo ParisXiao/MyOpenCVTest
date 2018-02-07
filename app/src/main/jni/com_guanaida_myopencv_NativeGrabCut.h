@@ -9,11 +9,11 @@ extern "C" {
 #endif
 /*
  * Class:     com_guanaida_myopencv_NativeGrabCut
- * Method:    grabCut
- * Signature: (J)J
+ * Method:    grabCutFromJNI
+ * Signature: (JIIII)J
  */
-JNIEXPORT jlong JNICALL Java_com_guanaida_myopencv_NativeGrabCut_grabCut
-  (JNIEnv *, jclass, jlong);
+JNIEXPORT jlong JNICALL Java_com_guanaida_myopencv_NativeGrabCut_grabCutFromJNI
+  (JNIEnv *, jobject, jlong, jint, jint, jint, jint);
 
 #ifdef __cplusplus
 }
