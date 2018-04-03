@@ -17,7 +17,7 @@ public class NativeGrabCut {
 //    public static native void reset(long gcapp);
 //    public static native boolean grabCut(long gcapp);
 //    public static native void grabCutOver(long gcapp);
-    public static native long grabCutFromJNI(long m,int l,int t,int r,int b);
+    public  native void grabCutFromJNI(Object bitmap);
 
 
 }

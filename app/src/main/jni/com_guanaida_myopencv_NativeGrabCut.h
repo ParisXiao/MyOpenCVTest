@@ -10,10 +10,10 @@ extern "C" {
 /*
  * Class:     com_guanaida_myopencv_NativeGrabCut
  * Method:    grabCutFromJNI
- * Signature: (JIIII)J
+ * Signature: (Ljava/lang/Object;)V
  */
-JNIEXPORT jlong JNICALL Java_com_guanaida_myopencv_NativeGrabCut_grabCutFromJNI
-  (JNIEnv *, jobject, jlong, jint, jint, jint, jint);
+JNIEXPORT void JNICALL Java_com_guanaida_myopencv_NativeGrabCut_grabCutFromJNI
+  (JNIEnv *, jobject, jobject);
 
 #ifdef __cplusplus
 }

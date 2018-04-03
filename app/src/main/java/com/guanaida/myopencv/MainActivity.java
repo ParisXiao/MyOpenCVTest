@@ -69,9 +69,10 @@ public class MainActivity extends AppCompatActivity {
         Utils.matToBitmap(dst,b);
         imageView.setImageBitmap(b);
     }
-    private BaseLoaderCallback mOpenCVCallBack = new BaseLoaderCallback(this) {
+    private BaseLoaderCallback mOpenCVCallBack=new BaseLoaderCallback(this) {
         @Override
-        public void onManrageConnected(int status) {
+        public void onManagerConnected(int status) {
+            super.onManagerConnected(status);
             switch (status) {
                 case LoaderCallbackInterface.SUCCESS: {
                     Log.i("Opencv", "OpenCV loaded successfully");
